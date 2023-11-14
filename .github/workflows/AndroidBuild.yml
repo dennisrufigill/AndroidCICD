@@ -6,8 +6,9 @@ on:
       branches : [ master ]
 
 jobs:
-    build:
-    runs-on : ubuntu20.04
+    ##build:
+    name: Run npm on Ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name : Checkout
         uses: actions/checkout@v4.1.0
